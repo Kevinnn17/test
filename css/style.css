@@ -73,14 +73,14 @@ p {
     display: none;
   }
   #front-text {
-    padding-top: 10%;
+    padding-top: 15%;
     height: 100vh;
-    background-image: url(../img/alan3-hp.jpeg); background-size: cover;
+    background-image: url(../img/tangan3.jpeg); background-size: cover;
     color: white;
   }
 
   #text-undang{
-    padding-top: 30% ;
+    padding-top: 35% ;
   }
   
   p{
