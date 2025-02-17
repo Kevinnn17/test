@@ -39,7 +39,40 @@ salin1.onclick = () => {
     timer: 1000,
   });
 };
+
+const rek2 = document.getElementById("rek2");
+const salin2 = document.getElementById("salin2");
+
+salin2.onclick = () => {
+  rek2.select(); // Selects the text inside the input
+  document.execCommand("copy"); // Copies the selected text to clipboard
+  Swal.fire({
+    icon: "success",
+    title: "No. Rekening Kedua Berhasil di Salin",
+    showConfirmButton: false,
+    timer: 1000,
+  });
+};
 // copy end
+
+// logic input nama undangan
+// Fungsi untuk mendapatkan parameter dari URL
+function getQueryParameter(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+// Ambil nama dari URL dan tampilkan di elemen dengan ID 'nama'
+document.addEventListener("DOMContentLoaded", function() {
+  const nama = getQueryParameter('nama'); // Mengambil parameter 'nama'
+  if (nama) {
+    document.getElementById('nama').textContent = nama; // Menampilkan nama di elemen
+  } else {
+    document.getElementById('nama').textContent = "Tamu Yang Terhormat"; // Default jika tidak ada nama
+  }
+});
+
+
 
 // waktu start
 // Set waktu tujuan (15 Maret 2025, 19:00:00)
