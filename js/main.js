@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // waktu start
 // Set waktu tujuan (15 Maret 2025, 19:00:00)
-const countDownDate = new Date("Mar 15, 2025 19:00:00").getTime();
+const countDownDate = new Date("Mar 15, 2025 18:30:00").getTime();
 
 // Update hitungan mundur setiap 1 detik
 const x = setInterval(function () {
